@@ -1,3 +1,8 @@
-<p>
-  main works!
-</p>
+<div>
+  <h3>Day: Monday - 4/8/2019</h3>
+  <h4>Task for today:</h4>
+  
+  <div class="task-list" *ngFor="let task of tasks">
+    <input type="checkbox" value={{task.id}} name={{task.id}}> {{ task.task }}
+  </div>
+</div>
