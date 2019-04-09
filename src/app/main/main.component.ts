@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { WeekDay } from '@angular/common';
 // import {NgbCheckBox} from '@ng-bootstrap/ng-bootstrap'
 
 @Component({
@@ -8,7 +7,7 @@ import { WeekDay } from '@angular/common';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
-  tasks = [{
+  tasks=[{
     id: 0,
     task: "Go for the meeting",
     completed: false
@@ -25,10 +24,12 @@ export class MainComponent implements OnInit {
   formateDate(scope){
     scope.today = new Date();
   }
-  
 
+  currentTime: Date;
 
-  constructor() { }
+  constructor() { 
+     this.currentTime = new Date()
+  }
 
   ngOnInit() {
   }
