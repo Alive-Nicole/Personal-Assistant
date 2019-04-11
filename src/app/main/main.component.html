@@ -1,5 +1,5 @@
 <div>
-  <h3>Day: {{currentTime}}</h3>
+  <h3>{{currentTime | date:'fullDate'}}</h3>
   <h4>Task for today:</h4>
   
   <div class="task-list" *ngFor="let task of tasks">
